@@ -1,19 +1,21 @@
 import React from 'react';
 import './App.css';
-import Navbar from "./components/holium/navbar/navbar";
-import Hero from "./components/hero/hero";
-import Projets from "./components/Projets/projets";
-import Contact from "./components/Contact/contact";
+import {createBrowserRouter, RouterProvider} from "react-router-dom";
+import PageIndex from "./components/Pages/PageIndex";
+import PageContact from "./components/Pages/PageContact";
 
+const router = createBrowserRouter([
+    {
+        path : '/',
+        element: <PageIndex />,
+    },
+    {
+        path : '/contact',
+        element: <PageContact />,
+    }
+])
 function App() {
-  return (
-      <div className="App">
-              <Navbar/>
-              <Hero/>
-              <Projets/>
-              <Contact />
-      </div>
-  );
+  return  <RouterProvider router={router}/>
 }
 
 export default App;

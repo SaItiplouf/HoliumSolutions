@@ -1,5 +1,4 @@
 import React from 'react';
-import {FaInstagram, FaLinkedin} from "react-icons/fa";
 function Hero() {
     return (
         <div

@@ -1,6 +1,6 @@
 import React from 'react';
 import {FaInstagram, FaLinkedin} from "react-icons/fa";
-function Contact() {
+function Footer() {
     return (
         <footer className="border-t border-gray-200">
             <div
@@ -27,4 +27,4 @@ function Contact() {
     )
 }
 
-export default Contact;
+export default Footer;
