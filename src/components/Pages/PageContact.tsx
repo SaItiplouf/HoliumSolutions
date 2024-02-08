@@ -1,11 +1,13 @@
-import Navbar from "../holium/navbar/navbar";
-import Footer from "../Footer/footer";
 import React from "react";
+import Footer from "../Fixe/Footer/footer";
+import Navbar from "../Fixe/navbar/navbar";
+import ContactForm from "../Contact/contactform";
 
 function PageContact() {
     return (
         <>
-            <Navbar/>
+            <Navbar />
+            <ContactForm />
             <Footer />
         </>
     )

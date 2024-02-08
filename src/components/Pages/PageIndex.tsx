@@ -1,16 +1,18 @@
-import Navbar from "../holium/navbar/navbar";
 import Hero from "../hero/hero";
 import Projets from "../Projets/projets";
-import Footer from "../Footer/footer";
 import React from "react";
+import Footer from "../Fixe/Footer/footer";
+import Navbar from "../Fixe/navbar/navbar";
 
 function PageIndex() {
     return (
     <>
-        <Navbar/>
-        <Hero/>
-        <Projets/>
-        <Footer />
+        <div className="min-h-screen">
+            <Navbar />
+            <Hero />
+            <Projets />
+            <Footer />
+        </div>
     </>
     )
 }
