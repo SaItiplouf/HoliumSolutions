@@ -58,11 +58,7 @@ function Hero() {
               </svg>
             </span>
           </button>
-          <Tooltip
-            id="my-tooltip-click"
-            content="Copier !"
-            openOnClick={true}
-          />
+          <Tooltip id="my-tooltip-click" content="Copié !" openOnClick={true} />
         </div>
       </div>
     </div>

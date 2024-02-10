@@ -4,7 +4,7 @@ import { FR, US } from "country-flag-icons/react/3x2";
 
 function Navbar() {
   return (
-    <div className="navbar bg-base-100 shadow-lg rounded-lg p-2 backdrop-filter backdrop-blur-lg bg-opacity-30 z-50">
+    <div className="navbar fixed bg-base-100 shadow-lg rounded-lg p-2 backdrop-filter backdrop-blur-lg bg-opacity-30 z-50">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -42,24 +42,27 @@ function Navbar() {
           </ul>
         </div>
 
-        <Link to="#main">
-          <div className="btn btn-ghost normal-case text-xl font-semibold relative overflow-hidden nav-link hover:bg-stone-100">
-            Holium Solutions
+        <Link to="/">
+          <div className="flex justify-center items-center h-20 w-20">
+            <img
+              src="/Holium/Fond%20blanc/Holium-04.svg"
+              className="max-w-full max-h-full"
+            />
           </div>
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
-          <li className="nav-item font-mono text-gray-800 text-sm md:text-md lg:text-xl">
+          <li className="nav-item font-mono text-gray-800 text-sm md:text-md lg:text-lg">
             <Link to="/">Acceuil</Link>
           </li>
           <li
-            className="nav-item font-mono text-gray-800 text-sm md:text-md lg:text-xl"
+            className="nav-item font-mono text-gray-800 text-sm md:text-md lg:text-lg"
             tabIndex={0}
           >
             <Link to="/contact">Contact</Link>
           </li>
-          <li className="nav-item font-mono text-gray-800 text-sm md:text-md lg:text-xl">
+          <li className="nav-item font-mono text-gray-800 text-sm md:text-md lg:text-lg">
             <Link to="/projets">Projets</Link>
           </li>
         </ul>
