@@ -29,13 +29,8 @@ export default function Navbar() {
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <Link to="#about">À propos</Link>
-                <details>
-                  <summary>Mail</summary>
-                  <ul className="p-2">
-                    <li>Mail</li>
-                  </ul>
-                </details>
+                <Link to="/">Acceuil</Link>
+                <Link to="/contact">Contact</Link>
               </li>
               <li>
                 <Link to="#projets">Projets</Link>
@@ -71,37 +66,33 @@ export default function Navbar() {
 
         <div className="navbar-end">
           <details className="relative inline-block text-left">
-            <summary className="inline-flex justify-center items-center w-full p-2 text-gray-700 hover:bg-gray-200 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
-              <span className="mr-2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  className="h-5 w-5"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M19 9l-7 7-7-7"
-                  ></path>
-                </svg>
-              </span>
+            <summary className="cursor-pointer inline-flex justify-center items-center w-full p-2 text-gray-700 hover:bg-gray-200 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                className="h-5 w-5"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
               <span className="text-lg">
-                <label className="cursor-pointer">
-                  <input type="radio" name="language" className="hidden" />
-                  <US title="United States" className="h-5 w-5" />
+                <label htmlFor="language1">
+                  <input
+                    type="radio"
+                    id="language1"
+                    name="language"
+                    className="hidden"
+                  />
                 </label>
+                <US title="United States" className="h-5 w-5 cursor-pointer" />
               </span>
             </summary>
-
-            <input
-              type="radio"
-              id="language"
-              name="language"
-              className="hidden"
-            />
 
             <div className="origin-top-right absolute right-0 mt-2 w-full rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
               <label
@@ -110,6 +101,12 @@ export default function Navbar() {
               >
                 <FR title="France" className="h-4 w-8" />
               </label>
+              <input
+                type="radio"
+                id="language"
+                name="language"
+                className="hidden"
+              />
             </div>
           </details>
         </div>

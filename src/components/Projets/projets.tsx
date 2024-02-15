@@ -3,7 +3,7 @@ import React from "react";
 function Projets() {
   return (
     <div className="py-12 bg-stone-50 bg-opacity-75">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 px-8">
         <div className="max-w-sm h-64 w-full mx-auto sm:mx-0 relative rounded-md overflow-hidden shadow-lg">
           <div
             className="group h-full bg-cover bg-center relative p-4 cursor-pointer"

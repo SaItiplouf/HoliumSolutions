@@ -26,9 +26,9 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="max-w-screen-xl flex justify-center items-center px-4 md:px-8 lg:px-16 xl:px-32 mx-auto h-[78vh] w-auto">
-      <div className="grid gap-8 grid-cols-1 md:grid-cols-2 bg-stone-50 text-gray-900 rounded-lg shadow-lg">
-        <div className="p-8">
+    <div className="max-w-screen-xl flex justify-center items-center px-4 md:px-8 lg:px-16 xl:px-32 mx-auto h-screen md:h-[78vh] w-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 bg-stone-50 text-gray-900 rounded-lg shadow-lg">
+        <div className="p-6">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4">
             Contactez-nous
           </h2>
@@ -37,9 +37,9 @@ export default function ContactForm() {
             <span className="underline">48 heures</span>.
           </div>
         </div>
-        <div className="p-8">
+        <div className="p-2 md:p-8">
           <form onSubmit={handleSubmit}>
-            <div className="mb-4">
+            <div className="mb-1 sm:mb-4">
               <span className="uppercase text-sm text-gray-600 font-bold">
                 Objet
               </span>
@@ -53,7 +53,7 @@ export default function ContactForm() {
                 required
               />
             </div>
-            <div className="mb-4">
+            <div className="mb-1 sm:mb-4">
               <span className="uppercase text-sm text-gray-600 font-bold">
                 Adresse mail
               </span>
@@ -67,7 +67,7 @@ export default function ContactForm() {
                 required
               />
             </div>
-            <div className="mb-4">
+            <div className="mb-2 sm:mb-4">
               <span className="uppercase text-sm text-gray-600 font-bold">
                 Message
               </span>
