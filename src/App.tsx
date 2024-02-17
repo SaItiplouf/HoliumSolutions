@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import PageIndex from "./components/Pages/PageIndex";
 import PageContact from "./components/Pages/PageContact";
 import "react-toastify/dist/ReactToastify.css";
+import "./i18n";
 
 const router = createBrowserRouter([
   {

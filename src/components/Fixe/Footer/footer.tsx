@@ -3,8 +3,8 @@ import { FaInstagram, FaLinkedin } from "react-icons/fa";
 
 function Footer() {
   return (
-    <footer className="border-t border-gray-200">
-      <div className="container flex flex-wrap items-center justify-between px-4 py-8 mx-auto lg:justify-center">
+    <footer className="footer bg-white w-full border-t border-gray-200">
+      <div className="container flex flex-wrap items-center justify-between px-4 py-8 mx-auto">
         <div className="font-love-ya flex items-center cursor-pointer hover:scale-95 transition-transform">
           <p className="font-mono text-gray-800 text-sm md:text-md lg:text-lg">
             Contactez-nous
