@@ -45,7 +45,11 @@ function Projets() {
                 backgroundImage: `url("${projet.image}")`,
               }}
             >
+              <div className="absolute top-0 -inset-full h-full w-1/2 z-5 block transform -skew-x-12 bg-gradient-to-r from-transparent to-white opacity-40 group-hover:animate-shine" />
+              {/* Superposition semi-transparente pour assombrir */}
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent  via-transparent to-black opacity-45"></div>
               {/* Contenu en bas de la carte */}
+
               <div className="flex flex-col justify-end h-full relative z-10">
                 <div className="flex items-center justify-start">
                   <h2 className="text-white text-xl font-bold mb-2">

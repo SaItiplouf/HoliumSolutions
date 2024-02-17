@@ -1,8 +1,11 @@
 import React from "react";
 import { IoIosSend } from "react-icons/io";
 import { Tooltip } from "react-tooltip";
+import { useTranslation } from "react-i18next";
 
 function Hero() {
+  const { t } = useTranslation();
+
   const copy = async () => {
     await navigator.clipboard.writeText("contact@holiumsolutions.fr");
   };
@@ -20,19 +23,11 @@ function Hero() {
         </div>
 
         <div className="mt-5 max-w-3xl text-center mx-auto">
-          <p className="text-lg text-gray-600 ">
-            Holium solutions est une micro-entreprise d'origine Lyonnaise,
-            développant toutes sortes de solutions web destinés à des
-            professionnels, e-commerce, applications de gestions, site vitrine
-            n'ont pas de secret pour nous
-          </p>
+          <p className="text-lg text-gray-600 ">{t("hero.bio")}</p>
         </div>
 
         <div className="mt-8 gap-3 flex justify-center">
-          <a
-            className="inline-flex font-mono font-bold justify-center items-center gap-x-3 text-center bg-gradient-to-tl from-blue-600 to-violet-600 hover:from-violet-600 hover:to-blue-600 text-white text-sm rounded-md focus:outline-none focus:ring-1 focus:ring-gray-600 py-3 px-4 "
-            href="#"
-          >
+          <a className="inline-flex font-mono font-bold justify-center items-center gap-x-3 text-center bg-gradient-to-tl from-blue-600 to-violet-600 hover:from-violet-600 hover:to-blue-600 text-white text-sm rounded-md focus:outline-none focus:ring-1 focus:ring-gray-600 py-3 px-4 ">
             Nos projets
             <IoIosSend size={18} />
           </a>

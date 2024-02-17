@@ -3,5 +3,8 @@
     "home": "Home",
     "contact": "Contact",
     "project": "Project"
+  },
+  "hero": {
+    "bio": " Holium solutions is a micro-enterprise of Lyon origin,\n            developing all kinds of web solutions for\n            professionals, e-commerce, management applications, showcase site\n            have no secrets for us"
   }
 }
