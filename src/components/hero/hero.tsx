@@ -27,10 +27,10 @@ function Hero() {
         </div>
 
         <div className="mt-8 gap-3 flex justify-center">
-          <a className="inline-flex font-mono font-bold justify-center items-center gap-x-3 text-center bg-gradient-to-tl from-blue-600 to-violet-600 hover:from-violet-600 hover:to-blue-600 text-white text-sm rounded-md focus:outline-none focus:ring-1 focus:ring-gray-600 py-3 px-4 ">
+          <p className="inline-flex font-mono font-bold justify-center items-center gap-x-3 text-center bg-gradient-to-tl from-blue-600 to-violet-600 hover:from-violet-600 hover:to-blue-600 text-white text-sm rounded-md focus:outline-none focus:ring-1 focus:ring-gray-600 py-3 px-4 ">
             Nos projets
             <IoIosSend size={18} />
-          </a>
+          </p>
           <button
             type="button"
             className="relative group p-2 inline-flex items-center gap-x-2 text-sm font-mono rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none "
