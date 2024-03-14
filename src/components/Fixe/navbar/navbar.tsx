@@ -8,8 +8,17 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="navbar fixed top-0 bg-base-100 shadow-lg rounded-lg p-2 backdrop-filter backdrop-blur-lg bg-opacity-30 z-50">
+      <div className="navbar h-24 fixed top-0 bg-base-100 shadow-lg rounded-lg p-2 backdrop-filter backdrop-blur-lg bg-opacity-30 z-50">
         <div className="navbar-start">
+          <div className="hidden lg:collapse md:h-full w-full px-6">
+            <Link to="/" className="h-20 w-20">
+              <img
+                src="/Holium/Fond%20blanc/Holium-04.svg"
+                className="max-w-full max-h-full hover:scale-95 transition-transform"
+                alt="motif de fond"
+              />
+            </Link>
+          </div>
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
               <svg
@@ -40,16 +49,6 @@ export default function Navbar() {
               </li>
             </ul>
           </div>
-
-          <Link to="/">
-            <div className="flex justify-center items-center h-20 w-20">
-              <img
-                src="/Holium/Fond%20blanc/Holium-04.svg"
-                className="max-w-full max-h-full"
-                alt="motif de fond"
-              />
-            </div>
-          </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
@@ -68,11 +67,11 @@ export default function Navbar() {
           </ul>
         </div>
 
-        <div className="navbar-end mr-4">
+        <div className="navbar-end">
           <LanguagePicker />
         </div>
       </div>
-      <div className="h-24 w-full"></div>
+      <div className="bg-base-100 h-24 w-full"></div>
     </>
   );
 }

@@ -22,3 +22,8 @@
 .nav-item:hover::before {
 	width: 100%;
 }
+
+/*H-screen - NAV & FOOTER*/
+.component-height {
+	height: calc(100vh - 13rem);
+}

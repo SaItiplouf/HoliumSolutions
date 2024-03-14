@@ -7,10 +7,12 @@ import { ToastContainer } from "react-toastify";
 function PageContact() {
   return (
     <>
-      <ToastContainer />
-      <Navbar />
-      <ContactForm />
-      <Footer />
+      <div className="min-h-screen flex flex-col">
+        <ToastContainer />
+        <Navbar />
+        <ContactForm />
+        <Footer />
+      </div>
     </>
   );
 }

@@ -19,7 +19,7 @@ export default function LanguagePicker() {
   };
 
   return (
-    <details className={`relative inline-block text-left`}>
+    <details className={`relative inline-block text-left mr-4`}>
       <summary className="cursor-pointer inline-flex justify-center items-center w-full p-2 text-gray-700 hover:bg-gray-200 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
         <svg
           xmlns="http://www.w3.org/2000/svg"

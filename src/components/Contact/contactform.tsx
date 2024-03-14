@@ -26,7 +26,7 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="max-w-screen-xl flex justify-center p-4 min-h-[42rem] items-center md:px-8 lg:px-16 xl:px-32 mx-auto h-auto md:h-[78vh] w-auto">
+    <div className="max-w-screen-xl flex justify-center p-4 items-center md:px-8 lg:px-16 xl:px-32 mx-auto component-height w-auto">
       <div className="grid grid-cols-1 md:grid-cols-2 p-4 bg-stone-50 text-gray-900 rounded-lg shadow-lg">
         <div className="p-6">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4">
