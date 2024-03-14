@@ -1,12 +1,16 @@
 import React from "react";
 import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
+import { useLocation } from "react-router-dom";
 
 function Footer() {
   const { t } = useTranslation();
-
+  const location = useLocation();
+  const isContactPage = location.pathname === "/contact";
   return (
-    <footer className="footer bg-white w-full border-t border-gray-200 h-28">
+    <footer
+      className={`footer bg-white w-full border-t border-gray-200 h-28 ${isContactPage ? "hidden" : ""} sm:block`}
+    >
       <div className="container flex flex-wrap items-center justify-between px-6 py-8 mx-auto">
         <div className="font-love-ya flex items-center cursor-pointer hover:scale-95 transition-transform">
           <p className="font-mono text-gray-800 md:text-lg sm:text-md">

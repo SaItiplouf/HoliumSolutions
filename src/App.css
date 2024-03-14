@@ -24,7 +24,16 @@
 }
 
 /*H-screen - NAV & FOOTER*/
-.component-height {
-	height: calc(100vh - 13rem);
+
+@media (min-width: 1px) {
+	.form-contact-height {
+		height: calc(100vh - 6rem);
+	}
+}
+
+@media (min-width: 768px) {
+	.component-height {
+		height: calc(100vh - 13rem);
+	}
 }
 
