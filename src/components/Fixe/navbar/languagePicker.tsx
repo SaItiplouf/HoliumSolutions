@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 export default function LanguagePicker() {
   const { i18n } = useTranslation();
 
-  const [primaryLanguage, setPrimaryLanguage] = useState("fr");
+  const [primaryLanguage, setPrimaryLanguage] = useState(i18n.language);
 
   const toggleLanguage = (event: any) => {
     event.stopPropagation(); // Empêche l'événement de se propager au composant <details>

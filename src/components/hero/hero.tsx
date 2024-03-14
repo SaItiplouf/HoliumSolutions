@@ -23,15 +23,19 @@ function Hero() {
           </h1>
         </div>
 
-        <div className="mt-5 max-w-3xl text-center mx-auto">
-          <p className="text-lg text-gray-600 ">{t("hero.bio")}</p>
+        <div className="mt-5 max-w-4xl text-center mx-auto">
+          <p className="text-sm xs:text-xs sm:text-base text-gray-600">
+            {t("index.hero.bio")}
+          </p>
         </div>
 
-        <div className="mt-8 flex flex-col items-center sm:flex-row sm:justify-center">
-          <p className="sm:mb-0 inline-flex font-mono font-bold justify-center items-center gap-x-3 text-center bg-gradient-to-tl from-blue-600 to-violet-600 hover:from-violet-600 hover:to-blue-600 text-white text-sm rounded-md focus:outline-none focus:ring-1 focus:ring-gray-600 py-3 px-4 ">
-            Nos projets
-            <IoIosSend size={18} />
-          </p>
+        <div className="mt-8 flex flex-col sm:flex-row sm:justify-center justify-center items-center text-center">
+          <button className="h-12 sm:mb-0 inline-flex btn-disabled text-sm xs:text-xs text-gray-100 sm:text-base gap-x-3 bg-gradient-to-tl from-blue-600 to-violet-600 hover:from-violet-600 hover:to-blue-600 rounded-md focus:outline-none focus:ring-1 focus:ring-gray-600 py-3 px-4 ">
+            <span className="flex items-center justify-center">
+              <span> {t("index.hero.project_button")}</span>
+              <IoIosSend size={18} className="ml-2 self-center h-full" />
+            </span>
+          </button>
           <button
             type="button"
             className="ml-0 mt-3 sm:ml-3 sm:mt-0 relative group p-2 inline-flex items-center gap-x-2 text-sm font-mono rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none "

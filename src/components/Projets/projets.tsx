@@ -1,23 +1,26 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 function Projets() {
+  const { t } = useTranslation();
+
   const [selectedProjet, setSelectedProjet] = useState(null);
 
   const projetsData = [
     {
-      title: "E-commerce",
+      title: t("index.project-type.E-commerce"),
       image: "/ecommerce.jpg",
     },
     {
-      title: "Site Vitrine",
+      title: t("index.project-type.Vitrine"),
       image: "/vitrine.jpg",
     },
     {
-      title: "Applications interne",
+      title: t("index.project-type.Application-Interne"),
       image: "/appinterne.jpg",
     },
     {
-      title: "SaaS",
+      title: t("index.project-type.SaaS"),
       image: "/saas.jpg",
     },
   ];
@@ -58,7 +61,9 @@ function Projets() {
                 </div>
 
                 <div className="flex items-center justify-end">
-                  <span className="text-white mr-2">Découvrir</span>
+                  <span className="text-white mr-2">
+                    {t("index.project-type.discover")}
+                  </span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"

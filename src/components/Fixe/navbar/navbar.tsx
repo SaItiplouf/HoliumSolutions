@@ -61,8 +61,11 @@ export default function Navbar() {
             >
               <Link to="/contact">{t("nav.contact")}</Link>
             </li>
-            <li className="nav-item font-mono text-gray-800 text-sm md:text-md lg:text-lg">
-              <Link to="/projets">{t("nav.project")}</Link>
+            {/*<li className="nav-item font-mono text-gray-800 text-sm md:text-md lg:text-lg">*/}
+            {/*  <Link to="/projets">{t("nav.project")}</Link>*/}
+            {/*</li>*/}
+            <li className="disabled nav-item font-mono text-gray-800 text-sm md:text-md lg:text-lg">
+              <a>{t("nav.project")}</a>
             </li>
           </ul>
         </div>

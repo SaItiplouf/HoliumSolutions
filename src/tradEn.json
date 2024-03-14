@@ -4,7 +4,27 @@
     "contact": "Contact",
     "project": "Project"
   },
-  "hero": {
-    "bio": " Holium solutions is a micro-enterprise of Lyon origin,\n            developing all kinds of web solutions for\n            professionals, e-commerce, management applications, showcase site\n            have no secrets for us"
+  "index.hero": {
+    "bio": " Holium solutions is a micro-enterprise of Lyon origin,\n            developing all kinds of web solutions for\n            professionals, e-commerce, management applications, showcase site\n            have no secrets for us",
+    "project_button": "Our projects"
+  },
+  "index.project-type": {
+    "discover": "Discover",
+    "E-commerce": "Online shop",
+    "Vitrine": "Showcase Website",
+    "Application-Interne": "Internal Administration tool",
+    "SaaS": "SaaS"
+  },
+  "footer": {
+    "contact": "Contact us"
+  },
+  "contact.form": {
+    "title": "Contact Us",
+    "subtext": "We'll reply within ",
+    "subtext-span": "2 business days, please be patient",
+    "subject": "Subject",
+    "email": "Email address",
+    "message": "Text",
+    "send": "Send"
   }
 }

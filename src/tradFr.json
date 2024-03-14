@@ -4,7 +4,27 @@
     "contact": "Contact",
     "project": "Projets"
   },
-  "hero": {
-    "bio": " Holium solutions est une micro-entreprise d'origine Lyonnaise,\n            développant toutes sortes de solutions web destinés à des\n            professionnels, e-commerce, applications de gestions, site vitrine\n            n'ont pas de secret pour nous"
+  "index.hero": {
+    "bio": " Holium solutions est une micro-entreprise d'origine Lyonnaise,\n            développant toutes sortes de solutions web destinés à des\n            professionnels, e-commerce, applications de gestions, site vitrine\n            n'ont pas de secret pour nous",
+    "project_button": "Nos projets"
+  },
+  "index.project-type": {
+    "discover": "Discover",
+    "E-commerce": "E-commerce",
+    "Vitrine": "Site Vitrine",
+    "Application-Interne": "Application de gestion interne",
+    "SaaS": "SaaS"
+  },
+  "footer": {
+    "contact": "Contactez-nous"
+  },
+  "contact.form": {
+    "title": "Contactez-nous",
+    "subtext": "Nous nous engageons à répondre en moins de ",
+    "subtext-span": "48 heures",
+    "subject": "Objet",
+    "email": "Adresse mail",
+    "message": "Message",
+    "send": "Envoyer"
   }
 }

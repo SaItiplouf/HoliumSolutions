@@ -2,8 +2,11 @@ import { useState } from "react";
 import axios from "axios";
 import { toast } from "react-toastify";
 import { handleChange, handleKeyDown } from "../../service/form.service";
+import { useTranslation } from "react-i18next";
 
 export default function ContactForm() {
+  const { t } = useTranslation();
+
   const [formData, setFormData] = useState({
     subject: "",
     email: "",
@@ -26,22 +29,23 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="max-w-screen-xl flex justify-center p-4 items-center md:px-8 lg:px-16 xl:px-32 mx-auto component-height w-auto">
+    <div className="max-w-screen-xl min-w-96 flex justify-center p-4 items-center md:px-8 lg:px-16 xl:px-32 mx-auto component-height w-auto">
       <div className="grid grid-cols-1 md:grid-cols-2 p-4 bg-stone-50 text-gray-900 rounded-lg shadow-lg">
         <div className="p-6">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4">
-            Contactez-nous
+            {t("contact.form.title")}
           </h2>
           <div className="text-gray-700">
-            Nous nous engageons à répondre en moins de{" "}
-            <span className="underline">48 heures</span>.
+            {t("contact.form.subtext")}
+            <span className="underline"> {t("contact.form.subtext-span")}</span>
+            .
           </div>
         </div>
         <div className="p-2 md:p-8">
           <form onSubmit={handleSubmit}>
             <div className="mb-1 sm:mb-4">
               <span className="uppercase text-sm text-gray-600 font-bold">
-                Objet
+                {t("contact.form.subject")}
               </span>
               <input
                 className="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
@@ -55,7 +59,7 @@ export default function ContactForm() {
             </div>
             <div className="mb-1 sm:mb-4">
               <span className="uppercase text-sm text-gray-600 font-bold">
-                Adresse mail
+                {t("contact.form.email")}
               </span>
               <input
                 className="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
@@ -69,7 +73,7 @@ export default function ContactForm() {
             </div>
             <div className="mb-2 sm:mb-4">
               <span className="uppercase text-sm text-gray-600 font-bold">
-                Message
+                {t("contact.form.message")}
               </span>
               <textarea
                 className="w-full h-32 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
@@ -82,9 +86,9 @@ export default function ContactForm() {
             <div>
               <button
                 type="submit"
-                className="inline-flex font-mono font-bold justify-center items-center gap-x-3 text-center bg-gradient-to-tl from-blue-600 to-violet-600 hover:from-violet-600 hover:to-blue-600 text-white text-sm rounded-md focus:outline-none focus:ring-1 focus:ring-gray-600 py-3 px-4"
+                className="inline-flex justify-center items-center gap-x-3 text-center bg-gradient-to-tl from-blue-600 to-violet-600 hover:from-violet-600 hover:to-blue-600text-sm xs:text-xs text-gray-100 sm:text-base font-semibold rounded-md focus:outline-none focus:ring-1 focus:ring-gray-600 py-3 px-4"
               >
-                Envoyer
+                {t("contact.form.send")}
               </button>
             </div>
           </form>

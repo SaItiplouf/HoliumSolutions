@@ -9,8 +9,10 @@ function PageIndex() {
     <>
       <div className="min-h-screen">
         <Navbar />
-        <Hero />
-        <Projets />
+        <div className="component-height">
+          <Hero />
+          <Projets />
+        </div>
         <Footer />
       </div>
     </>
