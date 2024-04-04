@@ -29,8 +29,8 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="max-w-screen-xl parent flex flex-col justify-center items-center px-4 md:px-8 lg:px-16 xl:px-32 mx-auto component-height form-contact-height w-full overflow-auto">
-      <div className="grid grid-cols-1 md:grid-cols-2 p-4 bg-stone-50 text-gray-900 rounded-lg shadow-lg md:m-4 lg:m-8 lg:my-12 flex-grow">
+    <div className="overflow-hidden flex-grow flex flex-col justify-center items-center px-4 md:px-8 lg:px-16 xl:px-32 mx-auto component-height form-contact-height w-full overflow-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 p-4 bg-stone-50 text-gray-900 rounded-lg shadow-lg md:m-4 lg:m-8 my-4 lg:my-12 flex-grow">
         <div className="p-2">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4">
             {t("contact.form.title")}
@@ -41,10 +41,11 @@ export default function ContactForm() {
             .
           </div>
         </div>
-        <div className="p-2 md:p-8">
-          {" "}
-          <form onSubmit={handleSubmit} className="space-y-4">
-            {" "}
+        <div className="p-2 md:p-8 flex-grow">
+          <form
+            onSubmit={handleSubmit}
+            className="space-y-4 flex flex-col h-full"
+          >
             <div className="flex flex-col">
               <label
                 htmlFor="subject"
@@ -54,7 +55,7 @@ export default function ContactForm() {
               </label>
               <input
                 id="subject"
-                className="w-full bg-gray-300 text-gray-900 mt-1 md:mt-2 p-2 md:p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                className="w-full bg-gray-300 text-gray-900 mt-1 md:mt-2 p-3 md:p-3 rounded-lg focus:outline-none focus:shadow-outline"
                 type="text"
                 name="subject"
                 value={formData.subject}
@@ -72,7 +73,7 @@ export default function ContactForm() {
               </label>
               <input
                 id="email"
-                className="w-full bg-gray-300 text-gray-900 mt-1 md:mt-2 p-2 md:p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                className="w-full bg-gray-300 text-gray-900 mt-1 md:mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
                 type="email"
                 name="email"
                 value={formData.email}
@@ -90,7 +91,7 @@ export default function ContactForm() {
               </label>
               <textarea
                 id="message"
-                className="w-full min-h-full bg-gray-300 text-gray-900 mt-1 md:mt-2 p-2 md:p-3 rounded-lg focus:outline-none focus:shadow-outline text-xs"
+                className="w-full h-44 sm:h-48 md:h-64 bg-gray-300 text-gray-900 mt-1 md:mt-2 p-2 md:p-3 rounded-lg focus:outline-none focus:shadow-outline text-xs"
                 name="content"
                 value={formData.content}
                 onChange={handleChangeCallback}
@@ -100,9 +101,9 @@ export default function ContactForm() {
             <div className="flex justify-start">
               <button
                 type="submit"
-                className="inline-flex justify-center items-center gap-x-3 text-center bg-gradient-to-tl from-blue-600 to-violet-600 hover:from-violet-600 hover:to-blue-600 text-sm xs:text-xs text-gray-100 sm:text-base font-semibold rounded-md focus:outline-none focus:ring-1 focus:ring-gray-600 py-3 px-4"
+                className="inline-flex justify-center items-center gap-x-3 text-center bg-gradient-to-tl from-blue-600 to-violet-600 hover:from-violet-600 hover:to-blue-600 font-semibold text-gray-100 text-md rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-600 py-2 px-6 transition duration-150 ease-in-out transform hover:scale-105"
               >
-                {t("contact.form.send")}
+                <span> {t("contact.form.send")} </span>
               </button>
             </div>
           </form>

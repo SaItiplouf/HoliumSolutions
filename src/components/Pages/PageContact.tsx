@@ -10,7 +10,9 @@ function PageContact() {
       <div className="min-h-screen flex flex-col">
         <ToastContainer />
         <Navbar />
-        <ContactForm />
+        <div className="flex-1 flex flex-col">
+          <ContactForm />
+        </div>
         <Footer />
       </div>
     </>
