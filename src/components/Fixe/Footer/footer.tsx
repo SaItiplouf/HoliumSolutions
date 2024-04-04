@@ -11,7 +11,7 @@ function Footer() {
     <footer
       className={`footer bg-white w-full border-t border-gray-200 h-28 ${isContactPage ? "hidden" : ""} sm:block`}
     >
-      <div className="container flex flex-wrap items-center justify-between px-6 py-8 mx-auto">
+      <div className="h-full container flex flex-wrap items-center justify-between px-6 py-8 mx-auto">
         <div className="font-love-ya flex items-center cursor-pointer hover:scale-95 transition-transform">
           <p className="font-mono text-gray-800 md:text-lg sm:text-md">
             {t("footer.contact")}

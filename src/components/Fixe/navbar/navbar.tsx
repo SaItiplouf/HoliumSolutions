@@ -11,7 +11,7 @@ export default function Navbar() {
       <div className="navbar h-24 fixed top-0 bg-base-100 shadow-lg rounded-lg p-2 backdrop-filter backdrop-blur-lg bg-opacity-30 z-50">
         <div className="navbar-start">
           <div className="hidden lg:collapse md:h-full w-full px-6">
-            <Link to="/" className="h-20 w-20">
+            <Link to="/" className="h-24 w-24">
               <img
                 src="/Holium/Fond%20blanc/Holium-04.svg"
                 className="max-w-full max-h-full hover:scale-95 transition-transform"

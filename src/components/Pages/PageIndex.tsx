@@ -7,7 +7,7 @@ import Navbar from "../Fixe/navbar/navbar";
 function PageIndex() {
   return (
     <>
-      <div className="min-h-screen">
+      <div className="h-screen">
         <Navbar />
         <div className="component-height">
           <Hero />
