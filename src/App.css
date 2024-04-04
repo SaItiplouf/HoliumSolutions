@@ -32,9 +32,8 @@
 	}
 }
 
-@media (min-width: 768px) {
+@media (min-width: 708px) {
 	.component-height {
 		height: calc(100vh - 13rem);
 	}
 }
-

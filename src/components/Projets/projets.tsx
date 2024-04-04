@@ -33,12 +33,12 @@ function Projets() {
   };
 
   return (
-    <div className="py-8 bg-stone-50 bg-opacity-75">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 px-8">
+    <div className="py-8 bg-stone-50 bg-opacity-75 flex flex-col overflow-hidden">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 px-8 relative">
         {projetsData.map((projet, index) => (
           <div
             key={index}
-            className="max-w-sm h-64 w-full mx-auto sm:mx-0 relative rounded-md overflow-hidden shadow-lg"
+            className="max-w-sm h-60 w-full mx-auto sm:mx-0 rounded-md overflow-hidden shadow-lg"
             onClick={() => handleProjetClick(index)} // Appelle handleProjetClick lorsqu'une carte est cliquée
           >
             {/* Image de la carte */}

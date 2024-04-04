@@ -7,9 +7,9 @@ import Navbar from "../Fixe/navbar/navbar";
 function PageIndex() {
   return (
     <>
-      <div className="h-screen">
+      <div className="overflow-auto flex flex-col min-h-screen">
         <Navbar />
-        <div className="component-height">
+        <div className="flex-1 flex flex-col">
           <Hero />
           <Projets />
         </div>
