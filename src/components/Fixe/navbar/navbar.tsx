@@ -14,7 +14,7 @@ export default function Navbar() {
             <Link to="/" className="h-24 w-24">
               <img
                 src="/Holium/Fond%20blanc/Holium-04.svg"
-                className="max-w-full max-h-full hover:scale-95 transition-transform"
+                className="max-w-full max-h-full hover:scale-95 transition-all duration-300 hover:saturate-0"
                 alt="motif de fond"
               />
             </Link>
