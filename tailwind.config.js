@@ -1,10 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./src/**/*.{js,ts,jsx,tsx}'],
+  content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       fontFamily: {
-        'love-ya': ['Love Ya Like A Sister', 'cursive'],
+        "love-ya": ["Love Ya Like A Sister", "cursive"],
       },
       animation: {
         shine: "shine 1s",
@@ -16,14 +16,10 @@ module.exports = {
           "100%": { left: "125%" },
         },
       },
-
     },
   },
   plugins: [require("daisyui")],
   daisyui: {
-    themes: [
-      "wireframe",
-    ]
-  }
-}
-
+    themes: ["wireframe"],
+  },
+};

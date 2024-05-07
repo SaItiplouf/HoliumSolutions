@@ -30,8 +30,8 @@ export default function ContactForm() {
 
   return (
     <div className="overflow-hidden flex-grow flex flex-col justify-center items-center px-4 md:px-8 lg:px-16 xl:px-32 mx-auto component-height form-contact-height w-full">
-      <div className="grid grid-cols-1 md:grid-cols-2 p-4 bg-stone-50 text-gray-900 rounded-lg shadow-lg md:m-4 lg:m-8 my-4 lg:my-12 flex-grow">
-        <div className="p-2">
+      <div className="grid h-full p-4 grid-cols-1 md:grid-cols-2 bg-stone-50 text-gray-900 rounded-lg shadow-lg md:m-4 lg:m-8 my-4 lg:my-12 flex-grow">
+        <div className="p-2 md:p-8 flex-grow">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4">
             {t("contact.form.title")}
           </h2>
@@ -44,7 +44,7 @@ export default function ContactForm() {
         <div className="p-2 md:p-8 flex-grow">
           <form
             onSubmit={handleSubmit}
-            className="space-y-4 flex flex-col h-full"
+            className="space-y-3 md:space-y-4 flex flex-col h-full"
           >
             <div className="flex flex-col">
               <label
@@ -82,7 +82,7 @@ export default function ContactForm() {
                 required
               />
             </div>
-            <div className="flex flex-col flex-grow h-2/6">
+            <div className="flex flex-col flex-grow">
               <label
                 htmlFor="message"
                 className="uppercase text-sm text-gray-600 font-bold"
@@ -91,13 +91,14 @@ export default function ContactForm() {
               </label>
               <textarea
                 id="message"
-                className="w-full h-44 sm:h-48 md:h-64 bg-gray-300 text-gray-900 mt-1 md:mt-2 p-2 md:p-3 rounded-lg focus:outline-none focus:shadow-outline text-xs"
+                className="w-full h-full sm:h-32 md:h-64 bg-gray-300 text-gray-900 mt-1 md:mt-2 p-2 md:p-3 rounded-lg focus:outline-none focus:shadow-outline text-xs"
                 name="content"
                 value={formData.content}
                 onChange={handleChangeCallback}
                 required
               ></textarea>
             </div>
+
             <div className="flex justify-start">
               <button
                 type="submit"
