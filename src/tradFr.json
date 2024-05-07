@@ -15,6 +15,16 @@
     "Application-Interne": "Application de gestion interne",
     "SaaS": "SaaS"
   },
+  "index.project-type-bio": {
+    "discover": "Découvrir",
+    "E-commerce": "Notre service de développement de e-commerce offre une solution complète pour créer, personnaliser et optimiser votre boutique en ligne. Nous nous mettrons à votre disposition pour travailler en étroite collaboration avec vous pour concevoir une plateforme e-commerce sur mesure, répondant à vos besoins spécifiques et à ceux de vos clients.",
+    "Vitrine": "Notre service de développement de sites vitrines offre une solution complète pour créer, personnaliser et optimiser votre présence en ligne. Nous sommes là pour collaborer étroitement avec vous dans le but de concevoir un site web qui reflète parfaitement l'identité et les valeurs de votre entreprise, captivant ainsi vos visiteurs dès leur arrivée sur votre site",
+    "Application-Interne": "Nos applications internes d'entreprise offrent des solutions sur mesure pour répondre aux besoins spécifiques de votre organisation. Conçues pour optimiser l'efficacité opérationnelle et améliorer la collaboration entre les équipes, nos applications sont développées avec une attention particulière portée à la sécurité, à la convivialité et à l'intégration transparente avec vos systèmes existants.",
+    "SaaS": "Nous offrons des services de développement sur mesure pour créer votre prochain SaaS (Software as a Service). Avec notre expertise technique et notre approche axée sur les utilisateurs, nous travaillerons en étroite collaboration avec vous pour transformer votre idée en une plateforme SaaS robuste et évolutive, prête à répondre aux besoins de vos clients."
+  },
+  "index.project" : {
+    "CloseButton" : "Fermer"
+  },
   "footer": {
     "contact": "Contactez-nous"
   },

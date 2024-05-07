@@ -9,18 +9,22 @@ function Projets() {
   const projetsData = [
     {
       title: t("index.project-type.E-commerce"),
+      bio: t("index.project-type-bio.E-commerce"),
       image: "/ecommerce.jpg",
     },
     {
       title: t("index.project-type.Vitrine"),
+      bio: t("index.project-type-bio.Vitrine"),
       image: "/vitrine.jpg",
     },
     {
       title: t("index.project-type.Application-Interne"),
+      bio: t("index.project-type-bio.Application-Interne"),
       image: "/appinterne.jpg",
     },
     {
       title: t("index.project-type.SaaS"),
+      bio: t("index.project-type-bio.SaaS"),
       image: "/saas.jpg",
     },
   ];
@@ -92,18 +96,12 @@ function Projets() {
             </h2>
             {/* Contenu de la div déroulante */}
             {/* Remplacez ce contenu par celui de votre div déroulante */}
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              aliquet lectus vel nunc congue, vel gravida lacus gravida. Duis
-              tempus metus in neque vestibulum, vel faucibus urna varius. Nullam
-              fermentum quam id tincidunt suscipit. Nam pharetra tellus vel ex
-              mollis, vel pretium libero ultrices.
-            </p>
+            <p>{projetsData[selectedProjet].bio}</p>
             <button
               className="bg-gray-200 hover:bg-gray-300 px-4 py-2 mt-4"
               onClick={() => setSelectedProjet(null)}
             >
-              Fermer
+              {t("index.project.CloseButton")}
             </button>
           </div>
         </div>

@@ -29,7 +29,7 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="overflow-hidden flex-grow flex flex-col justify-center items-center px-4 md:px-8 lg:px-16 xl:px-32 mx-auto component-height form-contact-height w-full">
+    <div className="overflow-hidden flex-grow flex flex-col justify-center items-center px-4 md:px-8 lg:px-16 xl:px-32 mx-auto form-contact-height w-full">
       <div className="grid h-full p-4 grid-cols-1 md:grid-cols-2 bg-stone-50 text-gray-900 rounded-lg shadow-lg md:m-4 lg:m-8 my-4 lg:my-12 flex-grow">
         <div className="p-2 md:p-8 flex-grow">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4">

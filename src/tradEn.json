@@ -15,6 +15,16 @@
     "Application-Interne": "Internal Administration tool",
     "SaaS": "SaaS"
   },
+  "index.project-type-bio": {
+    "discover": "Discover",
+    "E-commerce": "Our e-commerce development service offers a comprehensive solution to create, customize, and optimize your online store. We will be at your disposal to work closely with you to design a custom e-commerce platform that meets your specific needs and those of your customers.",
+    "Vitrine": "Our website development service offers a comprehensive solution to create, customize, and optimize your online presence. We are here to collaborate closely with you to design a website that perfectly reflects the identity and values of your company, captivating your visitors from the moment they arrive on your site.",
+    "Application-Interne": "Our internal business applications offer tailor-made solutions to meet the specific needs of your organization. Designed to optimize operational efficiency and enhance collaboration between teams, our applications are developed with particular attention to security, usability, and seamless integration with your existing systems.",
+    "SaaS": "We offer custom development services to create your next SaaS (Software as a Service) platform. With our technical expertise and user-centric approach, we will work closely with you to transform your idea into a robust and scalable SaaS platform, ready to meet the needs of your customers."
+  },
+  "index.project" : {
+    "CloseButton" : "Close"
+  },
   "footer": {
     "contact": "Contact us"
   },
