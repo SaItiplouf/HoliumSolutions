@@ -25,11 +25,23 @@ function Footer() {
         <div className="flex justify-center items-center gap-x-2">
           <div className="group relative hover:scale-105 cursor-pointer flex justify-center items-center">
             <div className="absolute top-0 -inset-full h-full w-1/2 z-5 block transform -skew-x-12 bg-gradient-to-r from-transparent to-white opacity-40 group-hover:animate-shine" />
-            <FaInstagram className="h-full w-6" />
+            <a
+              href="https://www.instagram.com/holiumsolutions/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaInstagram className="h-full w-6" />
+            </a>
           </div>
           <div className="group relative hover:scale-105 cursor-pointer flex justify-center items-center">
             <div className="absolute opacity-0 top-0 pointer-events-none -inset-full h-full w-1/2 z-5 block transform -skew-x-12 bg-gradient-to-r from-transparent to-white group-hover:animate-shine" />
-            <FaLinkedin className="h-full w-6" />
+            <a
+              href="https://www.linkedin.com/in/marco-ganier-73374b229/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaLinkedin className="h-full w-6" />
+            </a>
           </div>
         </div>
       </div>
