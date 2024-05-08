@@ -24,6 +24,9 @@
 	width: 100%;
 }
 
+.slider-fix::-webkit-details-marker {
+	display: none;
+}
 /*H-screen - NAV & FOOTER*/
 
 @media (min-width: 1px) {
